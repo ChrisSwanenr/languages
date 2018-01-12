@@ -1,21 +1,31 @@
 $(document).ready(function(){
-  var add = function(q1Input, q2Input, q3Input, q4Input, q5Input) {
+
+var add = function(q1Input, q2Input, q3Input, q4Input, q5Input) {
     return q1Input + q2Input + q3Input + q4Input + q5Input;
-
   }
 
-$('#quizbtn').submit(function(event) {
-  var q1Input = parseInt($('#q1').val());
-  var q2Input = parseInt($('#q2').val());
-  var q3Input = parseInt($('#q3').val());
-  var q4Input = parseInt($('#q4').val());
-  var q4Input = parseInt($('#q5').val());
+$("#test").submit(function(event) {
+  var add = function(q1Input, q2Input, q3Input, q4Input, q5Input) {
+      return q1Input + q2Input + q3Input + q4Input + q5Input;
+    }
 
+  var q1Input = parseInt($("#q1").val());
+  var q2Input = parseInt($("#q2").val());
+  var q3Input = parseInt($("#q3").val());
+  var q4Input = parseInt($("#q4").val());
+  var q5Input = parseInt($("#q5").val());
   var result = add(q1Input, q2Input, q3Input, q4Input, q5Input)
-  $('#test').hide();
+  $("#test").hide();
   if (result <= 5) {
-    $('#testresult').show();
-    $('#result').text("C#");
-  }
+    $("#testresult").show();
+    $("#result").text("C#");
+} else if (result <= 7) {
+    $("#testresult").show();
+    $("#result").text("Java");
+} else if (result <= 10) {
+  $("#testresult").show();
+  $("#result").text("PHP")
+}
   event.preventDefault();
+});
 });
