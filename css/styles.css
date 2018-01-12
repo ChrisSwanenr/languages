@@ -1,3 +1,19 @@
 #testresult {
   display: none;
 }
+body {
+  background-color: #3d3e53;
+}
+h1, h2 , h3 {
+  color: white;
+  text-align: center;
+}
+#grey {
+   background-color: #828282;
+   color: white;
+
+}
+#quizbtn {
+  position: relative;
+  top: 5px;
+}

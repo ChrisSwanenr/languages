@@ -17,15 +17,19 @@ $("#test").submit(function(event) {
   var result = add(q1Input, q2Input, q3Input, q4Input, q5Input)
   $("#test").hide();
   if (result <= 5) {
+    $("#testresult").slideDown();
     $("#testresult").show();
     $("#result").text("C#");
 } else if (result <= 7) {
+  $("#testresult").slideDown();
     $("#testresult").show();
     $("#result").text("Java");
 } else if (result <= 10) {
+  $("#testresult").slideDown();
   $("#testresult").show();
   $("#result").text("PHP")
 } else if (result <= 13) {
+  $("#testresult").slideDown();
   $("#testresult").show();
   $("#result").text("Ruby")
 }
