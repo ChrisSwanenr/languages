@@ -25,6 +25,9 @@ $("#test").submit(function(event) {
 } else if (result <= 10) {
   $("#testresult").show();
   $("#result").text("PHP")
+} else if (result <= 13) {
+  $("#testresult").show();
+  $("#result").text("Ruby")
 }
   event.preventDefault();
 });
