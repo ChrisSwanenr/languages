@@ -10,13 +10,55 @@
     <title>What track to choose?</title>
   </head>
   <body>
-    <div class="container">
-    <h1>Choosing the right track for you.</h1>
-    <h3>A few quick questions to help you determine which is right for you!</h3>
-    <div class="panel panel-info" id="languages">
-      <div class="panel-heading">
-        <h2>Based on your answers, your track should be <span id="result"></span>!</h2>
-      <div id="c#">
+  <div class="container">
+  <h1>Choosing the right track for you.</h1>
+  <h3>A few quick questions to help you determine which is right for you!</h3>
+  <div class="panel panel-info" id="languages">
+  <div class="panel-heading">
+    <h2>Based on your answers, your track should be <span id="result"></span>!</h2>
+      <form id="test">
+        <div class="form-row">
+          <label for="Question 1">How did you hear about Epicodus?</label>
+          <select class="form-control" id="q1">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+          </select>
+         </div>
+         <div class="form-row">
+          <label for="Question 2">What interests you most about programming?</label>
+          <select class="form-control" id="q2">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="Question 3">Are you more intersted in front end or back end development?</label>
+          <select class="form-control" id="q3">
+            <option value="1"></option>
+            <option value="2"></option>
+          </select>
+          <div class="form-row">
+           <label for="Question 4">Do you work well with others?</label>
+           <select class="form-control" id="q4">
+            <option value="1"></option>
+           <option value="2"></option>
+           <option value="3"></option>
+           </select>
+         </div>
+         <div class="form-row">
+          <label for="Question 5">Are you left-handed or right-handed?</label>
+          <select class="form-control" id="q5">
+           <option value="1"></option>
+          <option value="2"></option>
+          </select>
+        </div>
+          <button id="quizbtn" type="submit" class="btn btn-info">Submit</button>
+        </div>
+      </form>
+
     </div>
   </body>
 </html>
