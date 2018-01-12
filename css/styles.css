@@ -1,6 +1,18 @@
 #testresult {
   display: none;
 }
+#language1 {
+  display: none;
+}
+#language2 {
+  display: none;
+}
+#language3 {
+  display: none;
+}
+#language4 {
+  display: none;
+}
 body {
   background-color: #3d3e53;
 }
@@ -16,4 +28,17 @@ h1, h2 , h3 {
 #quizbtn {
   position: relative;
   top: 5px;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #F05F40;
 }

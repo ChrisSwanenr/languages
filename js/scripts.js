@@ -18,18 +18,22 @@ $("#test").submit(function(event) {
   $("#test").hide();
   if (result <= 5) {
     $("#testresult").slideDown();
+    $("#language1").show();
     $("#testresult").show();
     $("#result").text("C#");
-} else if (result <= 7) {
+} else if (result <= 9) {
   $("#testresult").slideDown();
+    $("#language2").show();
     $("#testresult").show();
     $("#result").text("Java");
 } else if (result <= 10) {
   $("#testresult").slideDown();
+  $("#language3").show();
   $("#testresult").show();
   $("#result").text("PHP")
 } else if (result <= 13) {
   $("#testresult").slideDown();
+  $("#language4").show();
   $("#testresult").show();
   $("#result").text("Ruby")
 }
